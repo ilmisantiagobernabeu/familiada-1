@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Familiada Game</title>
+		<link rel="stylesheet" href="assets/style.css">
+	</head>
+	<body>
+		<div id="game-container">
+			<div id="left-team-points" class="team-points">0</div>
+			<div id="main-board">
+				<div id="points-to-steal" class="points-to-steal">0</div>
+				<div id="question">Question</div>
+				<div id="answers">
+					<div id="left-team-mistakes" class="team-mistakes">&nbsp;</div>
+          <div>
+          <ul id="answers-list">
+					</ul>
+					<div id="points-in-round" class="points-in-round">
+						TOTAL :
+						<span id="points-in-round-value">0</span>
+					</div>
+          </div>
+					<div id="right-team-mistakes" class="team-mistakes">&nbsp;</div>
+				</div>
+			</div>
+			<div id="right-team-points" class="team-points">0</div>
+		</div>
+
+		<div id="bottom-bar">
+			<div class="d-flex flex-column">
+				<button id="left-mistake-button">Strike</button>
+				<button id="left-win-button">Left Win</button>
+			</div>
+			<!-- Generate buttons for each answer dynamically -->
+			<div class="d-flex flex-column">
+				<div class="answers-button-container">
+				
+				</div>
+			</div>
+			<div class="d-flex flex-column">
+				<button id="right-mistake-button">Strikei</button>
+				<button id="right-win-button">Right Win</button>
+			</div>
+		</div>
+
+		<div id="bottom-bar2">
+			<button id="przerywnik-button">Cutscene</button>
+      <button id="new-round-button">New round</button>
+		</div>
+		<script src="assets/script.js"></script>
+	</body>
+</html>
